@@ -4,3 +4,37 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }
+
+//Dark and light mode//
+
+const btn= document.getElementById("modeToggle");
+const btn2= document.getElementById("modeToggle2");
+const themeIcons = document.querySelectorAll(".icon");
+const currentTheme = localStorage.getItem("theme");
+
+if (currentTheme === "dark") {
+    setDarkmode();
+}
+
+btn.addEventListener("click", function (){
+    setTheme();
+})
+btn2.addEventListener("click", function (){
+    setTheme();
+})
+
+function setTheme() {
+    let currentTheme = document.body.getAttribute("theme");
+
+    if (currentTheme === "dark") {
+        
+    }
+}
+
+function setDarkmode() {
+
+}
+
+function setLightmode() {
+
+}
